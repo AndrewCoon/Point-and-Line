@@ -28,6 +28,10 @@ public class Main {
           p.renderV(test);
           // test.plotPoint(p.getXInt());
           test.plotPoint(p.getYInt());
+
+          AbsValue k = new AbsValue(2, 3, 0, 3);
+          k.render(test);
+          test.plotPoint(k.getVertex());
      }
 
      public static void print(Object s) {
