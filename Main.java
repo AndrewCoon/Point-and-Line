@@ -4,21 +4,28 @@ public class Main {
           Point a = new Point(1, 1);
           Point b = new Point(-1, -1);
           Line l = new Line(a, b);
-          Point c = l.getPerpBisector().getPointA();
-          Line perpL = new Line(l.getPerpBisector().getPointA(), l.getPerpBisector().getPointB());
+          Line perpL = l.getPerpBisector();
 
           test.plotPoint(a);
-          test.plotPoint(b);
-
-          l.getPerpBisector().getPointB();
           test.plotLine(l);
-          test.plotLine(l.getPerpBisector());
+          test.plotLine(perpL);
 
           print("Point: " + a);
+          print("Point X: " + a.getX());
+          print("Point X: " + a.getY());
+
           print("Line: " + l);
+          print("Point on Line A: " + l.getPointA());
+          print("Point on Line B: " + l.getPointB());
+          print("Line length: " + l.getLength());
+
           print("Slope: " + l.getSlope());
           print("Perp Slope: " + l.getPerpSlope());
-          print("Perp Function Test: " + perpL.getSlope());
+          print("Perpendicular Line: " + perpL);
+
+          Parabola p = new Parabola(3, 4, 1);
+          p.render(test);
+          p.renderV(test);
      }
 
      public static void print(Object s) {
