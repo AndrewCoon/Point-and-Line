@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=AbsValue
+comment1.params=a\ b\ c\ xL
+comment1.target=AbsValue(double,\ double,\ double,\ double)
+comment2.params=screen
+comment2.target=void\ render(GrapherPanel)
+comment3.params=
+comment3.target=Point\ getVertex()
+comment4.params=
+comment4.target=Point\ getYInt()
+comment5.params=s
+comment5.target=void\ print(java.lang.Object)
+comment5.text=\ public\ List<Point>\ getXInts()\ {\r\n\ \ \ \ \ \ \ \ \ \ List<Point>\ r\ \=\ new\ ArrayList<Point>();\r\n\ \ \ \ \ \ \ \ \ \ if\ (c\ \=\=\ 0)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ r.set(0,\ getVertex());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ r;\r\n\ \ \ \ \ \ \ \ \ \ }\ else\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (a\ >\ 0)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (c\ >\ 0)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ r;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\ else\ {\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ }\r\n}
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

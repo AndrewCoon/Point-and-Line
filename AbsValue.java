@@ -31,7 +31,7 @@ public class AbsValue {
           return y;
      }
 
-     public List<Point> getXInts() {
+     /* public List<Point> getXInts() {
           List<Point> r = new ArrayList<Point>();
           if (c == 0) {
                r.set(0, getVertex());
@@ -45,9 +45,14 @@ public class AbsValue {
                     }
                }
           }
-     }
+     } */
 
      public void print(Object s) {
           System.out.println(s);
+     }
+     
+     public String toString() {
+         String r = "y = " + a + "|x + " + b + "| + " + c;
+         return r;
      }
 }

@@ -1,8 +1,8 @@
-public class Parabola {
+public class SideWaysParabola {
      double a, b, c;
      Point p;
 
-     public Parabola(double a, double b, double c) {
+     public SideWaysParabola(double a, double b, double c) {
           this.a = a;
           this.b = b;
           this.c = c;
@@ -15,7 +15,7 @@ public class Parabola {
           Point current;
           Point prev = p;
           for (double i = 0; i < 10; i += 0.01) {
-               current = new Point(i, (this.a * (i * i)) + (this.b * (i)) + this.c);
+               current = new Point((this.a * (i * i)) + (this.b * (i)) + this.c, i);
                Line c = new Line(current, prev);
                screen.plotLine(c);
                prev = current;
@@ -24,7 +24,7 @@ public class Parabola {
           Point currentB;
           prev = p;
           for (double i = 0; i > -10; i -= 0.01) {
-               currentB = new Point(i, (this.a * (i * i)) + (this.b * (i)) + this.c);
+               currentB = new Point((this.a * (i * i)) + (this.b * (i)) + this.c, i);
                Line cB = new Line(currentB, prev);
                screen.plotLine(cB);
                prev = currentB;
@@ -58,7 +58,7 @@ public class Parabola {
      // }
      
      public String toString() {
-         String r = "y = " + a+ "x^2 + " + b + "x + " + c;
+         String r = "I don't even know";
          return r;
      }
 }
