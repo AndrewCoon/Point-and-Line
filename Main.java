@@ -32,6 +32,7 @@ public class Main {
           AbsValue k = new AbsValue(2, 3, 0, 3);
           k.render(test);
           test.plotPoint(k.getVertex());
+          test.plotPoint(k.getYInt());
      }
 
      public static void print(Object s) {

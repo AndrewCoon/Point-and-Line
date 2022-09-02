@@ -50,11 +50,9 @@ public class Parabola {
           return yInt;
      }
 
-     // public Point getXInt() {
-     //      // Simplified version of standard form with y = 0. X is issolated
+     // public Point[] getXInts() {
+     // Simplified version of standard form with y = 0. X is issolated
      // y = (1/(4(f-x))) * (x - h) + k where (h, k) is the v
-             //
-     //      Point xInt = new Point((((-1 * b) + Math.sqrt((b * b) + (4 * (a * c)))) / 2 * a), 0);
-     //      return xInt;
+     // return xInt;
      // }
 }

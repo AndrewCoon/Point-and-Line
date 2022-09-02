@@ -1,4 +1,4 @@
-import javax.print.event.PrintJobListener;
+import java.util.*;
 
 public class AbsValue {
      double a, b, c, xL;
@@ -19,13 +19,32 @@ public class AbsValue {
 
           screen.plotLine(l1);
           screen.plotLine(l2);
-
-          print(leftP + " " + v + " " + rightP);
      }
 
      public Point getVertex() {
           Point r = new Point(b, c);
           return r;
+     }
+
+     public Point getYInt() {
+          Point y = new Point(0, (a * (Math.abs(b)) + c));
+          return y;
+     }
+
+     public List<Point> getXInts() {
+          List<Point> r = new ArrayList<Point>();
+          if (c == 0) {
+               r.set(0, getVertex());
+               return r;
+          } else {
+               if (a > 0) {
+                    if (c > 0) {
+                         return r;
+                    } else {
+
+                    }
+               }
+          }
      }
 
      public void print(Object s) {
