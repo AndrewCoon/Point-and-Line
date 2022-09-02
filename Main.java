@@ -25,18 +25,19 @@ public class Main {
           print("Perp Slope: " + l.getPerpSlope());
           print("Perpendicular Line: " + perpL);
 
-          Parabola p = new Parabola(3, 4, 1);
+          Parabola p = new Parabola(-.1, -4, -1);
           p.render(test);
           p.renderV(test);
           // test.plotPoint(p.getXInt());
           test.plotPoint(p.getYInt());
           print("Parabola: " + p);
-          AbsValue k = new AbsValue(2, 3, 0, 3);
+          AbsValue k = new AbsValue(-2, 3, 0, 3);
           k.render(test);
           print("Absolute Value Function: " + k);
           test.plotPoint(k.getVertex());
           test.plotPoint(k.getYInt());
-          SideWaysParabola sWP = new SideWaysParabola(3,5,1);
+          SideWaysParabola sWP = new SideWaysParabola(-3,5,1);
+          sWP.render(test);
      }
 
      public static void print(Object s) {
