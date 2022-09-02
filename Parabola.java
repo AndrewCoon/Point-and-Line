@@ -43,4 +43,16 @@ public class Parabola {
      public void renderV(GrapherPanel screen) {
           screen.plotPoint(getVertex());
      }
+
+     public Point getYInt() {
+          // Standard Parabola form with x = 0 to get y int
+          Point yInt = new Point(0, (a * (0 * 0)) + (b * (0)) + c);
+          return yInt;
+     }
+
+     // public Point getXInt() {
+     //      // Simplified version of standard form with y = 0. X is issolated
+     //      Point xInt = new Point((((-1 * b) + Math.sqrt((b * b) + (4 * (a * c)))) / 2 * a), 0);
+     //      return xInt;
+     // }
 }

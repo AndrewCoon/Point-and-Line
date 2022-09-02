@@ -26,6 +26,8 @@ public class Main {
           Parabola p = new Parabola(3, 4, 1);
           p.render(test);
           p.renderV(test);
+          // test.plotPoint(p.getXInt());
+          test.plotPoint(p.getYInt());
      }
 
      public static void print(Object s) {
