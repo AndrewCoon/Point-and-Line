@@ -31,23 +31,30 @@ public class AbsValue {
           return y;
      }
 
-     // public List<Point> getXInts() {
-     // List<Point> r = new ArrayList<Point>();
-     // if (c == 0) {
-     // r.set(0, getVertex());
-     // return r;
-     // } else {
-     // if (a > 0) {
-     // if (c > 0) {
-     // return r;
-     // } else {
-     //
-     // }
-     // }
-     // }
-     // }
+     /*
+      * public List<Point> getXInts() {
+      * List<Point> r = new ArrayList<Point>();
+      * if (c == 0) {
+      * r.set(0, getVertex());
+      * return r;
+      * } else {
+      * if (a > 0) {
+      * if (c > 0) {
+      * return r;
+      * } else {
+      * 
+      * }
+      * }
+      * }
+      * }
+      */
 
      public void print(Object s) {
           System.out.println(s);
+     }
+
+     public String toString() {
+          String r = "y = " + a + "|x + " + b + "| + " + c;
+          return r;
      }
 }
